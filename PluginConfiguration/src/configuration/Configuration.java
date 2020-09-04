@@ -45,10 +45,10 @@ public abstract class Configuration extends File implements Cloneable {
 	}
 
 	/**
-	 * 
+	 * Even if the server is not opened using this method, the configuration file is still working properly.
 	 * @param port (Use \"0\" for any available port, you will know which one the web is using for your plugin)
 	 * @throws IOException
-	 * @throws ConfigurationException
+	 * @throws ConfigurationException If the specified port is not available
 	 */
 	public void startServer(int port) throws IOException, ConfigurationException {
 		if (httpHandler == null)

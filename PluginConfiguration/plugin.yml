@@ -1,0 +1,5 @@
+name: CrisWebConfiguration
+main: plugin.CristichiWebConfiguration
+version: 0.115
+api-version: 1.13
+load: STARTUP
